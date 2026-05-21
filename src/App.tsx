@@ -132,7 +132,7 @@ const monthlyData = [
   { name: 'Fev 26', xAxisPeriod: '1-28', period: '01 a 28 de fevereiro', Investimento: 645.36, Receita: 8894.00, ROAS: 13.78 },
   { name: 'Mar 26', xAxisPeriod: '1-31', period: '01 a 31 de março', Investimento: 1538.37, Receita: 36879.70, ROAS: 23.97 },
   { name: 'Abr 26', xAxisPeriod: '1-30', period: '01 a 30 de abril', Investimento: 1818.45, Receita: 55451.50, ROAS: 30.49 },
-  { name: 'Mai 26', xAxisPeriod: '1-12', period: '01 a 12 de maio', Investimento: 704.51, Receita: 34698.25, ROAS: 49.25 },
+  { name: 'Mai 26', xAxisPeriod: '1-21', period: '01 a 21 de maio', Investimento: 1215.43, Receita: 55798.35, ROAS: 45.91 },
 ];
 
 const CustomAxisTick = ({ x, y, payload }: any) => {
@@ -246,7 +246,7 @@ export default function App() {
           >
             <h1 className="text-[13px] font-bold tracking-[0.2em] uppercase text-[#CCCCCC]">Relatório de Performance</h1>
             <div className="text-5xl md:text-7xl font-serif font-extrabold tracking-tight leading-[1.1] text-[#FFFFFF] uppercase">
-              01 A 12 DE MAIO <span className="text-[#E31212]">/ 2026</span>
+              01 A 21 DE MAIO <span className="text-[#E31212]">/ 2026</span>
             </div>
           </motion.div>
         </header>
@@ -257,21 +257,21 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             <MetricCard
               title="Investimento"
-              value={<AnimatedCounter value={704.51} prefix="R$ " />}
+              value={<AnimatedCounter value={1215.43} prefix="R$ " />}
               icon={ChartLineUp}
               accent="neutral"
               delay={0.2}
             />
             <MetricCard
               title="Receita Gerada"
-              value={<AnimatedCounter value={34698.25} prefix="R$ " />}
+              value={<AnimatedCounter value={55798.35} prefix="R$ " />}
               icon={CurrencyDollar}
               accent="neutral"
               delay={0.3}
             />
             <MetricCard
               title="ROAS Geral"
-              value="49.25x"
+              value="45.91x"
               icon={TrendUp}
               accent="green"
               subtext="Retorno sobre investimento publicitário"
@@ -286,7 +286,7 @@ export default function App() {
            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               <MetricCard
                 title="Cliques (Todos)"
-                value="928"
+                value="1.520"
                 icon={CursorClick}
                 accent="neutral"
                 subtextHighlight="100%"
@@ -295,25 +295,25 @@ export default function App() {
               />
               <MetricCard
                 title="Visualizações da Página"
-                value="699"
+                value="1.128"
                 icon={Eye}
                 accent="blue"
-                subtextHighlight="75.3%"
+                subtextHighlight="74.2%"
                 subtext="Retenção de cliques"
                 delay={0.3}
               />
               <MetricCard
                 title="Adições ao Carrinho"
-                value="475"
+                value="758"
                 icon={ShoppingCart}
                 accent="yellow"
-                subtextHighlight="67.9%"
+                subtextHighlight="67.2%"
                 subtext="Conv. de visualizações"
                 delay={0.4}
               />
               <MetricCard
                 title="Total de Compras"
-                value="262"
+                value="418"
                 icon={CurrencyDollar}
                 accent="green"
                 subtextHighlight="55.1%"
@@ -329,30 +329,30 @@ export default function App() {
            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               <MetricCard
                 title="Impressões"
-                value="117.782"
+                value="196.691"
                 icon={Eye}
                 accent="neutral"
                 delay={0.2}
               />
               <MetricCard
                 title="Alcance Único"
-                value="38.912"
+                value="53.334"
                 icon={Users}
                 accent="neutral"
-                subtextHighlight="3.03x"
+                subtextHighlight="3.69x"
                 subtext="Frequência média no período"
                 delay={0.3}
               />
               <MetricCard
                 title="Custo por Compra (CPA)"
-                value={<AnimatedCounter value={2.69} prefix="R$ " />}
+                value={<AnimatedCounter value={2.91} prefix="R$ " />}
                 icon={Target}
                 accent="neutral"
                 delay={0.4}
               />
               <MetricCard
                 title="Custo por Clique (CPC)"
-                value={<AnimatedCounter value={0.76} prefix="R$ " />}
+                value={<AnimatedCounter value={0.80} prefix="R$ " />}
                 icon={CurrencyDollar}
                 accent="neutral"
                 delay={0.5}
@@ -370,19 +370,19 @@ export default function App() {
                {[
                  {
                    title: "01. Eficiência Extrema de ROAS",
-                   body: <>O modelo operou com um retorno (ROAS) de <strong className="text-[#E31212] font-bold">49.25x</strong>. Com um investimento exato de R$ 704,51, geramos R$ 34.698,25. O Custo por Compra operou a incomparáveis R$ 2,69, reforçando alinhamento ideal de oferta/público.</>
+                   body: <>O modelo operou com um retorno (ROAS) de <strong className="text-[#E31212] font-bold">45.91x</strong>. Com um investimento exato de R$ 1.215,43, geramos R$ 55.798,35. O Custo por Compra operou a incomparáveis R$ 2,91, reforçando alinhamento ideal de oferta/público.</>
                  },
                  {
                    title: "02. Velocidade do Funil Intermediário",
-                   body: <>Dentre 699 acessos, 475 registraram intenção real de compra no carrinho (<strong className="text-[#E31212] font-bold">67.9% de aprovação inicial da LP</strong>). A experiência entre a chegada e entrada de pedido não possui atritos relevantes.</>
+                   body: <>Dentre 1.128 acessos, 758 registraram intenção real de compra no carrinho (<strong className="text-[#E31212] font-bold">67.2% de aprovação inicial da LP</strong>). A experiência entre a chegada e entrada de pedido não possui atritos relevantes.</>
                  },
                  {
                    title: "03. Saturação vs Frequência de Exibição",
-                   body: <>Frequência controlada em <strong className="text-[#E31212] font-bold">3.03</strong> num alcance de 38K usuários. Não há sintomas graves de fadiga criativa. O leilão entregou um ótimo CPM de R$ 5,98, indicando competitividade forte dos ativos visuais e da conta.</>
+                   body: <>Frequência controlada em <strong className="text-[#E31212] font-bold">3.69</strong> num alcance de 53K usuários. Não há sintomas graves de fadiga criativa. O leilão entregou um ótimo CPM de R$ 6,18, indicando competitividade forte dos ativos visuais e da conta.</>
                  },
                  {
                    title: "04. Descompasso Tátil nos Criativos",
-                   body: <>Dos 928 cliques (Total), <strong className="text-[#E31212] font-bold">apenas 604 (65%)</strong> direcionaram efetivamente ao site via link. Parte do orçamento está direcionando engajamento intra-plataforma. Sugere-se diretivas de call-to-action (CTA) mais nítidas para reduzir esse atrito em próximas fases.</>
+                   body: <>Dos 1.520 cliques (Total), <strong className="text-[#E31212] font-bold">apenas 980 (64%)</strong> direcionaram efetivamente ao site via link. Parte do orçamento está direcionando engajamento intra-plataforma. Sugere-se diretivas de call-to-action (CTA) mais nítidas para reduzir esse atrito em próximas fases.</>
                  }
                ].map((insight, idx) => (
                    <motion.div
@@ -424,7 +424,7 @@ export default function App() {
              <div className="flex flex-col gap-3">
                <h3 className="text-[17px] md:text-lg font-bold uppercase text-[#FFFFFF]">Aceleração do Ciclo de Maturidade</h3>
                <p className="text-[16px] md:text-[17px] text-[#CCCCCC] leading-[1.6]">
-                 A proporção entre investimento e resultado alcançou seu pico de eficiência absoluta. Apenas nos primeiros 12 dias de maio, operamos sob um ROAS recorde de <strong className="text-[#E31212] font-bold">49.25x</strong>. A receita gerada já bate de frente e supera a volumetria de meses completos anteriores em uma fração do tempo, consumindo quase 4x menos caixa. Maior escalabilidade e velocidade de absorção de receita com a melhor segurança financeira do projeto até aqui.
+                 A proporção entre investimento e resultado alcançou seu pico de eficiência absoluta. Apenas nos primeiros 21 dias de maio, operamos sob um ROAS recorde de <strong className="text-[#E31212] font-bold">45.91x</strong>. A receita gerada já bate de frente e supera a volumetria de meses completos anteriores em uma fração do tempo, consumindo quase 4x menos caixa. Maior escalabilidade e velocidade de absorção de receita com a melhor segurança financeira do projeto até aqui.
                </p>
              </div>
           </motion.div>
